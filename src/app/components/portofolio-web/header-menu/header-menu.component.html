@@ -1,0 +1,18 @@
+<mat-toolbar class="header-menu-section">
+    <!-- <img src="assets/images/logo.png" alt="logo" class="logo" /> -->
+    <h1 class="logo-text">Logo School</h1>
+    <span class="spacer"></span>
+    <button mat-icon-button class="menu-btn" arial-label="menu-btn">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <div class="menu-collapse">
+        <mat-list role="list" class="list-menu">
+            <mat-list-item (click)="gotoDiv('beranda')"><span>Beranda</span></mat-list-item>
+            <mat-list-item (click)="gotoDiv('about')"><span>About</span></mat-list-item>
+            <mat-list-item (click)="gotoDiv('news')"><span>News</span></mat-list-item>
+            <mat-list-item (click)="gotoDiv('achievement')"><span>Achievement</span></mat-list-item>
+            <mat-list-item (click)="gotoDiv('students')"><span>Students & Alumni</span></mat-list-item>
+            <mat-list-item (click)="gotoDiv('login')"><span>Login</span></mat-list-item>
+        </mat-list>
+    </div>
+</mat-toolbar>
