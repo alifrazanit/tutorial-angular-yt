@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../../components/portofolio-web/header/header.component';
-import { BannerComponent } from '../../components/portofolio-web/banner/banner.component';
-import { HeaderMenuComponent } from '../../components/portofolio-web/header-menu/header-menu.component';
+import { HeaderComponent } from '@components/portofolio-web/header/header.component';
+import { BannerComponent } from '@components/portofolio-web/banner/banner.component';
+import { HeaderMenuComponent } from '@components/portofolio-web/header-menu/header-menu.component';
 @Component({
   selector: 'app-portofolio-web',
   standalone: true,

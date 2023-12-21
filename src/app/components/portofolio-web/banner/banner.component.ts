@@ -5,12 +5,12 @@ import { MatButtonModule } from '@angular/material/button';
   selector: 'app-banner',
   standalone: true,
   imports: [
-    MatButtonModule
+    MatButtonModule,
   ],
   templateUrl: './banner.component.html',
   styleUrl: './banner.component.css',
-  schemas:[CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class BannerComponent {
-
+  listImages = []
 }

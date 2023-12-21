@@ -1,14 +1,14 @@
 <div class="banner-section" id="bannerId">
     <swiper-container class="banner-swiper" autoplay-delay="2500" autoplay-disable-on-interaction="false" effect="fade">
+        @for (img of listImages; track img){
         <swiper-slide>
-            <img src="assets/images/bg-1.jpg" alt="banner image" class="banner-image" />
+            <img [src]="img" alt="banner image" class="banner-image" />
         </swiper-slide>
+        } @empty{
         <swiper-slide>
-            <img src="assets/images/bg-2.jpg" alt="banner image" class="banner-image" />
+            <h1>Data Kosong</h1>
         </swiper-slide>
-        <swiper-slide>
-            <img src="assets/images/bg-3.jpg" alt="banner image" class="banner-image" />
-        </swiper-slide>
+        }
     </swiper-container>
     <div class="banner-overlay">
         <div class="banner-layer"></div>
