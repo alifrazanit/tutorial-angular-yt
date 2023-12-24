@@ -12,5 +12,9 @@ import { MatButtonModule } from '@angular/material/button';
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class BannerComponent {
-  listImages = []
+  listImages = [
+    'assets/images/bg-1.jpg',
+    'assets/images/bg-2.jpg',
+    'assets/images/bg-3.jpg',
+  ]
 }
