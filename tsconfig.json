@@ -5,7 +5,8 @@
     "baseUrl": "./",
     "paths": {
       "@components/*":["src/app/components/*"],
-      "@template/*":["src/app/template/*"]
+      "@template/*":["src/app/template/*"],
+      "@pipes/*":["src/app/pipes/*"],
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
