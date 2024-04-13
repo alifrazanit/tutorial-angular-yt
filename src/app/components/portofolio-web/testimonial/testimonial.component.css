@@ -1,0 +1,136 @@
+.testimonial-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f1f2f6;
+}
+
+.testimonial-section .container {
+  margin-left: 12rem;
+  margin-right: 12rem;
+}
+
+.testimonial-section .container .row .col .title-section {
+  font: 500 2em/1em "Lora", serif;
+}
+
+.testimonial-section .container .row {
+  display: flex;
+}
+
+.testimonial-section .container .testimonial-content .testimonial-card {
+  display: flex;
+  flex-flow: row;
+  align-items: start;
+  gap: 2rem;
+}
+
+.testimonial-section
+  .container
+  .testimonial-content
+  .testimonial-card
+  .image-container
+  img {
+  object-fit: cover;
+  width: 18rem;
+  height: 20rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.testimonial-section .container .testimonial-content .testimonial-card .name,
+.testimonial-section .container .testimonial-content .testimonial-card .role {
+  font-weight: bold;
+  font-size: 1.2em;
+  font-family: "Lora", serif;
+}
+
+.testimonial-section
+  .container
+  .testimonial-content
+  .testimonial-card
+  .name-and-testimonial
+  .speach-content {
+  position: relative;
+  font: 400 1.5em/1.8em "Lora", serif;
+  text-align: justify;
+}
+
+@media (max-width: 1190px) {
+  .testimonial-section .container {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+  .testimonial-section
+    .container
+    .testimonial-content
+    .testimonial-card
+    .name-and-testimonial
+    .speach-content {
+    font: 400 1.3em/1.8em "Lora", serif;
+  }
+}
+@media (max-width: 1050px) {
+  .testimonial-section
+    .container
+    .testimonial-content
+    .testimonial-card
+    .name-and-testimonial
+    .speach-content {
+    font: 400 1.1em/1.8em "Lora", serif;
+  }
+}
+
+@media (max-width: 900px) {
+  .testimonial-section .container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .testimonial-section .container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .testimonial-section
+    .container
+    .testimonial-content
+    .testimonial-card
+    .name-and-testimonial
+    .speach-content {
+    font: 400 1em/1.8em "Lora", serif;
+  }
+  .testimonial-section .container .testimonial-content .testimonial-card .name,
+  .testimonial-section .container .testimonial-content .testimonial-card .role {
+    font-size: 1em;
+  }
+  .testimonial-section .container .testimonial-content .testimonial-card {
+    gap: 1rem;
+  }
+  .testimonial-section
+    .container
+    .testimonial-content
+    .testimonial-card
+    .image-container
+    img {
+    width: 15rem;
+  }
+}
+@media (max-width: 600px) {
+  .testimonial-section
+    .container
+    .testimonial-content
+    .testimonial-card
+    .image-container
+    img {
+    width: 10rem;
+    height: 15rem;
+  }
+}
+
+@media (max-width: 450px) {
+    .testimonial-section .container .testimonial-content .testimonial-card {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,37 @@
+<div class="testimonial-section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="title-section">Kata Mereka</div>
+            </div>
+        </div>
+        <div class="testimonial-content">
+            <swiper-container
+                pagination="true"
+                pagination-dynamic-bullets="true"
+                space-between="30"
+                #swiperTesti
+            >
+            @for(tesimonial of testimonials; track tesimonial){
+                <swiper-slide>
+                    <div class="testimonial-container">
+                        <div class="testimonial-card">
+                            <div class="image-container">
+                                <img [src]="tesimonial.image" class="testimonial-image" />
+                            </div>
+                            <div class="name-and-testimonial">
+                                <p class="speach-content">
+                                    {{tesimonial.testimonial}}
+                                </p>
+                                <p class="name">{{tesimonial.name}}</p>
+                                <p class="role">{{tesimonial.role}} - Lulus {{tesimonial.graduationDate}}</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                 </swiper-slide>
+            }
+            </swiper-container>
+        </div>
+    </div>
+</div>
