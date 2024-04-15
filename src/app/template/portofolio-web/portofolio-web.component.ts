@@ -5,7 +5,8 @@ import { HeaderMenuComponent } from '@components/portofolio-web/header-menu/head
 import { AboutUsComponent } from '@components/portofolio-web/about-us/about-us.component';
 import { NewsComponent } from '@components/portofolio-web/news/news.component';
 import { AchievementComponent } from '@components/portofolio-web/achievement/achievement.component';
-import {  TestimonialComponent} from '@components/portofolio-web/testimonial/testimonial.component';
+import { TestimonialComponent } from '@components/portofolio-web/testimonial/testimonial.component';
+import { FooterComponent } from '@components/portofolio-web/footer/footer.component';
 
 
 @Component({
@@ -18,7 +19,8 @@ import {  TestimonialComponent} from '@components/portofolio-web/testimonial/tes
     AboutUsComponent,
     NewsComponent,
     AchievementComponent,
-    TestimonialComponent
+    TestimonialComponent,
+    FooterComponent
   ],
   templateUrl: './portofolio-web.component.html',
   styleUrl: './portofolio-web.component.css'
@@ -32,7 +34,7 @@ export class PortofolioWebComponent implements OnInit {
 
   constructor(
     private el: ElementRef
-  ){ }
+  ) { }
 
   ngOnInit(): void {
     this.headerEl = this.el.nativeElement.querySelector('#headerId').offsetTop;
@@ -40,7 +42,7 @@ export class PortofolioWebComponent implements OnInit {
   }
 
   @HostListener('window:scroll', [])
-  onWindowScroll(){
+  onWindowScroll() {
     this.bannerIsScroll = window.scrollY > this.headerEl;
   }
 }
